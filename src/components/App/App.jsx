@@ -7,7 +7,6 @@ import { Statistics } from "../Statistics/Statistics"
 import { FriendList } from "../FriendList/FriendList"
 import {TransactionHistory} from "../TransactionHistory/TransactionHistory"
 import { Container } from "./App.styled";
-import PropTypes from 'prop-types';
 
 
 export const App = () => {
@@ -26,24 +25,3 @@ export const App = () => {
     </Container>
   );
 };
-
-Profile.propTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired
-}
-
-Statistics.propTypes = {
-  title: PropTypes.string,
-  data: PropTypes.arrayOf(PropTypes.object).isRequired
-}
-
-FriendList.propTypes = {
-  friends: PropTypes.arrayOf(PropTypes.object)
-}
-
-TransactionHistory.propTypes = {
-  transactions: PropTypes.arrayOf(PropTypes.object)
-}

@@ -23,6 +23,10 @@ const Friend = ({ avatar,name,isOnline,id }) => {
     )
 }
 
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(PropTypes.object).isRequired
+}
+
 Friend.propTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

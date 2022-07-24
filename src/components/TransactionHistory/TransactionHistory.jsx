@@ -41,6 +41,10 @@ function upFirstLetter(type) {
     return upFirst + other
 }
 
+TransactionHistory.propTypes = {
+  transactions: PropTypes.arrayOf(PropTypes.object).isRequired
+}
+
 Transaction.propTypes = {
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,

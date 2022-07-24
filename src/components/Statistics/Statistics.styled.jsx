@@ -34,7 +34,7 @@ export const Item = styled.li`
     align-items: center;
     justify-content: center;
     height: 100px;
-    color: white;
+    color: black;
     .label{
         font-size: 15px;
     }
